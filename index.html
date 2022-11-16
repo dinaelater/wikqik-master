@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>WikQik Jobs</title>
+</head>
+
+<body>
+  <header>
+    <!-- Start Main Nav Bar -->
+    <nav class="navbar navbar-expand-xlg navbar-light justify-content-start">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+        aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" alt="WikQik" title="WikQik" /></a>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 search-text" type="search" placeholder="Search" />
+        <div class="mr-sm-2 d-none d-md-inline-block position-relative locations-group">
+          <span class="location-icon position-absolute"><i class="fas fa-map-marker-alt"></i></span>
+          <input class="form-control locations w-100" type="search" placeholder="Location" />
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0 filter-button" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <a href="#" class="main-link app-job">Your job application</a> <!-- Link in Right Side -->
+      
+
+      <!-- Start Main Menu Collapse by Bar Icon -->
+      <div class="collapse navbar-collapse" id="main-menu">
+        <span class="close-menu"><i class="far fa-window-close"></i></span>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+        </ul>
+      </div>
+      <!-- END Main Menu -->
+    </nav>
+    <!-- END Main Nav Bar -->
+  </header>
+
+  <div class="all-jobs py-4">
+    <div class="container">
+      <div class="search-container">
+        <div class="row">
+          <div class="d-none d-md-block col-sm-4 search-page-filter">
+            <div class="search-filters" id="accordion">
+              <div class="search-filters-title d-none d-md-block">
+                <h4 class="mb-3">Filter by</h4>
+              </div>
+              <div class="search-filter">
+                <div class="option-wrapper mb-2">
+                  <button class="options-title btn position-relative" data-toggle="collapse" data-target="#collapseJobType"
+                    aria-expanded="true" aria-controls="collapseJobType">
+                    <span class="options-title-text">JOB TYPE</span>
+                    <span class="down-arrow position-absolute"><i class="fas fa-chevron-down"></i></span>
+                  </button>
+                  <div class="show-all collapse" id="collapseJobType" aria-labelledby="headingOne"
+                    data-parent="#accordion">
+                    <fieldset>
+                      <div class="radio-button">
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Full Time
+                            <span class="job-count">(1000)</span>
+                          </p>
+                        </button>
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Part Time
+                            <span class="job-count">(1000)</span>
+                          </p>
+                        </button>
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Seasonal
+                            <span class="job-count"> (1000)</span>
+                          </p>
+                        </button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="search-filter">
+                <div class="option-wrapper mb-2">
+                  <button class="options-title btn position-relative" data-toggle="collapse" data-target="#collapseJobCat"
+                    aria-expanded="true" aria-controls="collapseJobCat">
+                    <span class="options-title-text">JOB CATEGORY</span>
+                    <span class="down-arrow position-absolute"><i class="fas fa-chevron-down"></i></span>
+                  </button>
+                  <div class="show-all collapse" id="collapseJobCat" aria-labelledby="headingOne" data-parent="#accordion">
+                    <fieldset>
+                      <div class="radio-button">
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Software Development
+                            <span class="job-count"> ( 1000 ) </span>
+                          </p>
+                        </button>
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Solutions Architect
+                            <span class="job-count">(1000 )</span>
+                          </p>
+                        </button>
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Fulfillment & Operations Management
+                            <span class="job-count"> ( 1000 ) </span></p>
+                        </button>
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Operations, IT, & Support Engineering
+                            <span class="job-count">( 1000 ) </span>
+                          </p>
+                        </button>
+                        <button class="radio-option btn position-relative">
+                          <p class="label-text"> Sales, Advertising, & Account Management
+                            <span class="job-count"> ( 1000 ) </span>
+                          </p>
+                        </button>
+                      </div>
+                      <button class="display-all-trigger btn">more<span class="more-arrow-down"></span></button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="search-filter">
+                <div class="option-wrapper mb-2">
+                  <button class="options-title btn position-relative" data-toggle="collapse" data-target="#collapseCities"
+                  aria-expanded="true" aria-controls="collapseCities">
+                    <span class="options-title-text">CITIES</span>
+                    <span class="down-arrow position-absolute"><i class="fas fa-chevron-down"></i></span>
+                  </button>
+                  <div class="show-all collapse"  id="collapseCities" aria-labelledby="headingOne" data-parent="#accordion">
+                    <fieldset>
+                      <div class="checkbox">
+                        <button class="checkbox-option btn position-relative">
+                          <p class="label-text"> Seattle, Washington, USA
+                            <span class="job-count">( 1000 ) </span>
+                          </p>
+                          <input class="job-cat-checkbox" type="checkbox" name="jobcat">
+                        </button>
+                        <button class="checkbox-option btn position-relative">
+                          <p class="label-text"> Bengaluru, Karnataka, IND
+                            <span class="job-count">(1000)</span>
+                          </p>
+                          <input class="job-cat-checkbox" type="checkbox" name="jobcat">
+                        </button>
+                        <button class="checkbox-option btn position-relative">
+                          <p class="label-text"> New York, New York, USA
+                            <span class="job-count"> (1000)</span>
+                          </p>
+                          <input class="job-cat-checkbox" type="checkbox" name="jobcat">
+                        </button>
+                        <button class="checkbox-option btn position-relative" name="desktopFilter_normalized_location" role="option"
+                          data-label="London, England, GBR" aria-selected="false">
+                          <p class="label-text">London, England, GBR
+                            <span class="job-count">(1000)</span>
+                          </p>
+                          <input class="job-cat-checkbox" type="checkbox" name="jobcat">
+                        </button>
+                        <button class="checkbox-option btn position-relative">
+                          <p class="label-text"> Vancouver, British Columbia, CAN
+                            <span class="job-count">(1000)</span>
+                          </p>
+                          <input class="job-cat-checkbox" type="checkbox" name="jobcat">
+                        </button>
+                      </div>
+                      <button class="display-all-trigger btn">more<span class="more-arrow-down"></span></button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 search-page-job-list">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-sm-6 job-count-info mb-3">Showing 1 - 10 of 10000 jobs</div>
+              <div class="col-md-4 col-sm-6 sort-container mb-3">
+                <div class="dropdown w-100" aria-haspopup="true" aria-expanded="false" role="listbox">
+                  <button class="btn sort-dropdown position-relative" data-toggle="dropdown"> 
+                    Sort by: Most relevant 
+                    <span class="down-arrow mr-1 ml-3"><i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu w-100 p-0">
+                      <a class="dropdown-item" href="#" role="option">Most  relevant</a>
+                      <a class="dropdown-item"  href="#" role="option">Most recent</a>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="job-tile-lists col-12">
+                <!-- Start job Loop -->
+                <div class="job-tile p-3 mb-3">
+                  <a href="#" class="job-link">
+                    <div class="job">
+                      <div class="row">
+                        <div class="info col-12 col-md-8">
+                          <h3 class="job-title"> Delivery Station Liaison - Full Time (40 Hours) - DLA3 - Commerce, CA,
+                            USA</h3> <!-- the job Title -->
+                          <p class="location-and-id">USA, CA, Commerce | Job ID: SF200035723</p> <!-- the job Location and ID  -->
+                        </div>
+                        <div class="info col-12 col-md-4">
+                          <h4 class="posting-date">Posted May 29, 2020</h4>
+                          <p class="meta time-elapsed">(Updated about 10 hours ago)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p class="description col-12">
+                          <span>
+                            The address for this location is: 5829 Smithway Street&nbsp;
+                            Commerca, California&nbsp; 90040The schedule for this role, subject to change based on
+                            business need, will be: Wednesdays-Saturdays, 9:00am-8:00pmThis is a Full-Time (40 hours per
+                            week) position. The aver
+                          </span>
+                          <span class="read-more">...Read more</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="job-tile p-3 mb-3">
+                  <a href="#" class="job-link">
+                    <div class="job">
+                      <div class="row">
+                        <div class="info col-12 col-md-8">
+                          <h3 class="job-title"> Delivery Station Liaison - Full Time (40 Hours) - DLA3 - Commerce, CA,
+                            USA</h3> <!-- the job Title -->
+                          <p class="location-and-id">USA, CA, Commerce | Job ID: SF200035723</p> <!-- the job Location and ID  -->
+                        </div>
+                        <div class="info col-12 col-md-4">
+                          <h4 class="posting-date">Posted May 29, 2020</h4>
+                          <p class="meta time-elapsed">(Updated about 10 hours ago)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p class="description col-12">
+                          <span>
+                            The address for this location is: 5829 Smithway Street&nbsp;
+                            Commerca, California&nbsp; 90040The schedule for this role, subject to change based on
+                            business need, will be: Wednesdays-Saturdays, 9:00am-8:00pmThis is a Full-Time (40 hours per
+                            week) position. The aver
+                          </span>
+                          <span class="read-more">...Read more</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="job-tile p-3 mb-3">
+                  <a href="#" class="job-link">
+                    <div class="job">
+                      <div class="row">
+                        <div class="info col-12 col-md-8">
+                          <h3 class="job-title"> Delivery Station Liaison - Full Time (40 Hours) - DLA3 - Commerce, CA,
+                            USA</h3> <!-- the job Title -->
+                          <p class="location-and-id">USA, CA, Commerce | Job ID: SF200035723</p> <!-- the job Location and ID  -->
+                        </div>
+                        <div class="info col-12 col-md-4">
+                          <h4 class="posting-date">Posted May 29, 2020</h4>
+                          <p class="meta time-elapsed">(Updated about 10 hours ago)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p class="description col-12">
+                          <span>
+                            The address for this location is: 5829 Smithway Street&nbsp;
+                            Commerca, California&nbsp; 90040The schedule for this role, subject to change based on
+                            business need, will be: Wednesdays-Saturdays, 9:00am-8:00pmThis is a Full-Time (40 hours per
+                            week) position. The aver
+                          </span>
+                          <span class="read-more">...Read more</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="job-tile p-3 mb-3">
+                  <a href="#" class="job-link">
+                    <div class="job">
+                      <div class="row">
+                        <div class="info col-12 col-md-8">
+                          <h3 class="job-title"> Delivery Station Liaison - Full Time (40 Hours) - DLA3 - Commerce, CA,
+                            USA</h3> <!-- the job Title -->
+                          <p class="location-and-id">USA, CA, Commerce | Job ID: SF200035723</p> <!-- the job Location and ID  -->
+                        </div>
+                        <div class="info col-12 col-md-4">
+                          <h4 class="posting-date">Posted May 29, 2020</h4>
+                          <p class="meta time-elapsed">(Updated about 10 hours ago)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p class="description col-12">
+                          <span>
+                            The address for this location is: 5829 Smithway Street&nbsp;
+                            Commerca, California&nbsp; 90040The schedule for this role, subject to change based on
+                            business need, will be: Wednesdays-Saturdays, 9:00am-8:00pmThis is a Full-Time (40 hours per
+                            week) position. The aver
+                          </span>
+                          <span class="read-more">...Read more</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- End Jobs Loop-->
+              </div>
+            </div>
+            <div class="list-footer mt-4">
+              <div class="d-none d-md-block">
+                <div class="row">
+                  <!-- the  Pagination of Jobs in PC -->
+                  <div class="pagination d-none">
+                    <button class="circle disabled left"></button>
+                    <button class="page-button disabled current-page">1</button>
+                    <button class="page-button">2</button>
+                    <button class="page-button">3</button>
+                    <button class="page-button disabled">...</button>
+                    <button class="page-button">1000</button>
+                    <button class="btn circle right"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-none">
+                <div class="row">
+                  <!-- Load More Jobs in Mobile -->
+                  <div class="col-12">
+                    <button class="load-more btn">Load more jobs</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="media-icons pt-4">
+      <div class="media-group container">
+        <div class="row align-items-center m-0">
+          <div class="section mr-3">
+            <p class="link-title mb-0">JOIN US ON</p>
+          </div>
+          <div class="icons">
+            <a href="#" class="social-icon facebook-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon linkedin-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon insta-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon twitter-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <hr class="split" />
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <p class="small-caps link-title">Find Careers</p>
+            <ul class="links p-0 list-unstyled">
+              <li class="link"><a href="#">Job Categories</a></li>
+              <li class="link"><a href="#">Teams</a></li>
+              <li class="link"><a href="#">Locations</a></li>
+              <li class="link"><a href="#">US and EU Military recruiting</a></li>
+              <li class="link"><a href="#">Fulfillment center jobs</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <p class="small-caps link-title">Working At Amazon</p>
+            <ul class="links p-0 list-unstyled">
+              <li class="link"><a href="#">Culture</a></li>
+              <li class="link"><a href="#">Benefits</a></li>
+              <li class="link"><a href="#">Amazon Blog</a></li>
+              <li class="link"><a href="#">Diversity at Amazon</a></li>
+              <li class="link"><a href="#">Our leadership principles</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <p class="small-caps link-title">Help</p>
+            <ul class="links p-0 list-unstyled">
+              <li class="link"><a href=#">FAQ</a></li>
+              <li class="link"><a href="#">Interviewing at Amazon</a></li>
+              <li class="link"><a href="#">Review application status</a></li>
+              <li class="link"><a href="#">Disability accommodations</a></li>
+              <li class="link"><a href="#">EU background checks</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="footer-locale-dropdown mt-3">
+              <div class="simple-dropdown">
+                <a class="btn language-footer dropdown-toggle" href="#" data-toggle="dropdown" role="listbox" aria-owns="languagesDropdown"
+                  aria-haspopup="true" aria-expanded="false" aria-label="language dropdown menu">
+                  <i class="fas fa-globe"></i>
+                  English
+                </a>
+                <div class="dropdown-menu" role="listbox" id="languagesDropdown">
+                  <a class="dropdown-item languages-item" role="option" href="#">Arabic</a>
+                  <a class="dropdown-item languages-item" role="option" href="#">Turkish</a>
+                  <a class="dropdown-item languages-item " role="option" href="#"> English</a>
+                  <a class="dropdown-item languages-item" role="option" href="#"> Deutsch</a>
+                  <a class="dropdown-item languages-item" role="option" href="#"> Français</a>
+                  <a class="dropdown-item languages-item" role="option" href="#"> Italiano </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="window-overlay"></div>
+
+  <!-- END job description-->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/my-script.js"></script>
+</body>
+
+</html>
